@@ -11,5 +11,28 @@
     padding-left: 0;
 }
 .header__navbar-item{
+    margin: 0 8px;
+    position: relative;
+}
+.header__navbar-item,
+.header__navbar-item-link {
     display: inline-block;
+    font-size: 1.4rem;
+    color : var(--white-color);
+    text-decoration: none;
+    font-weight:300;
+}
+.header__navbar-item--strong{
+    font-weight: 400;
+}
+.header__navbar-item--separate::after{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background-color: #fb9086;
+    right: -9px;
+    top: 50;
+    transform: translateY(-50%)
 }
